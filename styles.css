@@ -585,3 +585,9 @@ button { font: inherit; cursor: pointer; }
   .nav-logo { font-size: 1.5rem; padding-inline: 48px; }
   .nav-toggle { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
 }
+/* logo a la izquierda, solo el texto centrado */
+.nav-avatar { position: absolute; left: max(16px, env(safe-area-inset-left, 0px)); top: 12px; }
+@media (max-width: 760px) {
+  .nav-avatar { top: 50%; transform: translateY(-50%); }
+  .nav-logo { padding-inline: 60px; }
+}
