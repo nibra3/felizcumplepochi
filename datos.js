@@ -151,7 +151,7 @@ const DATOS = {
       { src: "fotos/ozzy-02.jpg", texto: "Amor genuino" },
       { src: "fotos/ozzy-03.jpg", texto: "Mami te amo" },
       { src: "fotos/ozzy-04.jpg", texto: "Mimos" },
-      { src: "fotos/ozzy-05.jpg", texto: "Sobremesa" },
+      { src: "fotos/ozzy-05.jpg", texto: "Acostaditos" },
       { src: "fotos/ozzy-06.jpg", texto: "Cara a cara" },
       { src: "fotos/ozzy-07.jpg", texto: "Modelo" },
       { src: "fotos/ozzy-08.jpg", texto: "Durmiendo abrazados" },
