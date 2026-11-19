@@ -574,3 +574,14 @@ button { font: inherit; cursor: pointer; }
 .busq-ayuda-btn { margin: 6px 0 8px; font: 800 .9rem var(--f-texto); background: var(--celeste-claro); border: 2px solid var(--negro); border-radius: 999px; padding: 6px 14px; cursor: pointer; }
 .busq-ayuda-btn:hover { transform: rotate(-2deg); }
 .busq-ayuda { font-family: var(--f-mano); font-size: 1.4rem; color: var(--granate); margin: 4px 0 8px; animation: busqEntra .4s ease; }
+
+/* ---------- Nav: título centrado y avatar quieto ---------- */
+.nav-avatar { animation: none; }
+.nav { flex-wrap: wrap; justify-content: center; row-gap: 6px; }
+.nav-logo { flex-basis: 100%; justify-content: center; text-align: center; }
+.nav-links { justify-content: center; }
+@media (max-width: 760px) {
+  .nav { position: sticky; }
+  .nav-logo { font-size: 1.5rem; padding-inline: 48px; }
+  .nav-toggle { position: absolute; right: max(16px, env(safe-area-inset-right, 0px)); top: 50%; transform: translateY(-50%); }
+}
