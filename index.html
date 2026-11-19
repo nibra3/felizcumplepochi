@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Feliz Cumpleaños Pochi</title>
+<meta name="theme-color" content="#800020">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Great+Vibes&family=Nunito:wght@400;600;800&family=Caveat:wght@500;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="corazones-fondo" id="corazonesFondo" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="nav-logo" href="#inicio"><img class="nav-avatar" src="pochi.png" alt="" width="40" height="40"> <span data-dato="apodo">Pochi</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  <nav class="nav-links" id="navLinks">
+    <a href="#bebe">Tu gente</a>
+    <a href="#recuerdos">Tu historia</a>
+    <a href="#familia">Amigos</a>
+    <a href="#flores">Flores</a>
+    <a href="#sanlorenzo">San Lorenzo</a>
+    <a href="#mascotas">Bichos</a>
+    <a href="#ozzy">Ozzy</a>
+    <a href="#quiz">Test</a>
+    <a href="#juegos">Juegos</a>
+    <a href="#torta" class="nav-cta">Sorpresa 🎂</a>
+  </nav>
+</header>
+
+<main>
+  <!-- ============ INICIO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-inner">
+      <h1 class="hero-titulo">
+        <span class="linea" id="tituloLinea1">¡Feliz Cumpleaños</span>
+        <span class="linea nombre" id="tituloNombre">Pochi!</span>
+      </h1>
+      <div class="cuenta" id="cuenta">
+        <div class="cuenta-item"><span id="cDias">0</span><small>días</small></div>
+        <div class="cuenta-item"><span id="cHoras">0</span><small>horas</small></div>
+        <div class="cuenta-item"><span id="cMin">0</span><small>min</small></div>
+        <div class="cuenta-item"><span id="cSeg">0</span><small>seg</small></div>
+      </div>
+
+      <div class="hero-botones">
+        <a class="btn btn-granate" href="#bebe">Empezar el recorrido</a>
+        <a class="btn btn-celeste" href="#torta">Ir a la sorpresa</a>
+      </div>
+    </div>
+    <div class="hero-stickers" aria-hidden="true">
+      <span class="sticker s1">🎈</span><span class="sticker s2">💝</span><span class="sticker s3">🌹</span><span class="sticker s4">🎉</span><span class="sticker s5">✨</span>
+    </div>
+  </section>
+
+  <div class="cinta" aria-hidden="true"><div class="cinta-track" id="cinta"></div></div>
+
+  <!-- ============ EN NÚMEROS ============ -->
+  <section class="juntos">
+    <div class="contenedor juntos-inner">
+      <p class="eyebrow"><span data-dato="apodo">Pochi</span>, en números</p>
+      <div class="juntos-numeros">
+        <div><strong id="nDias">0</strong><span>días vividos</span></div>
+        <div><strong id="nHoras">0</strong><span>horas pensando diseños creativos</span></div>
+      </div>
+      <div class="numeros-extra" id="numerosExtra"></div>
+    </div>
+  </section>
+
+  <!-- ============ BEBÉ ============ -->
+  <section class="seccion" id="bebe">
+    <div class="contenedor">
+      <p class="eyebrow">Pochi y los suyos</p>
+      <h2 class="titulo">Las personas más importantes de tu vida</h2>
+      <p class="bajada">Los que te cuidaron desde el primer día y siguen a tu lado. Deslizá para ver más y tocá una foto para verla grande.</p>
+      <div class="carrusel" data-album="bebe"></div>
+    </div>
+  </section>
+  <!-- ============ RECUERDOS ============ -->
+  <section class="seccion seccion-celeste" id="recuerdos">
+    <div class="contenedor">
+      <p class="eyebrow">Tu historia</p>
+      <h2 class="titulo">Cómo llegaste hasta acá</h2>
+      <p class="bajada">Algunos momentos que te hicieron ser vos.</p>
+      <div class="carrusel" id="historia"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAMILIA ============ -->
+  <section class="seccion" id="familia">
+    <div class="contenedor">
+      <p class="eyebrow">Tus amigos</p>
+      <h2 class="titulo">Amigos</h2>
+      <p class="bajada">Los que elegiste para compartir risas, salidas y de todo.</p>
+      <div class="carrusel" data-album="amigos"></div>
+    </div>
+  </section>
+  <!-- ============ RO Y LAS FLORES ============ -->
+  <section class="seccion seccion-flores" id="flores">
+    <div class="petalos" aria-hidden="true"></div>
+    <div class="contenedor">
+      <p class="eyebrow">🌷 Florecita 🌷</p>
+      <h2 class="titulo">Ro y las flores</h2>
+      <p class="bajada">Ninguna flor es más linda que vos, pero juntas quedan perfectas.</p>
+      <div class="carrusel" data-album="flores"></div>
+    </div>
+  </section>
+  <!-- ============ SAN LORENZO ============ -->
+  <section class="seccion seccion-cuervo" id="sanlorenzo">
+    <div class="contenedor">
+      <p class="eyebrow">Cuerva de corazón</p>
+      <h2 class="titulo">San Lorenzo, siempre</h2>
+      <p class="bajada">Azulgrana desde la cuna. Vamos Ciclón.</p>
+      <div class="carrusel" data-album="sanlorenzo"></div>
+    </div>
+  </section>
+  <!-- ============ MASCOTAS ============ -->
+  <section class="seccion" id="mascotas">
+    <div class="contenedor">
+      <p class="eyebrow">Tus bichos</p>
+      <h2 class="titulo">Tus bichos de siempre</h2>
+      <p class="bajada">Los peludos que te eligieron.</p>
+      <div class="carrusel" data-album="bichos"></div>
+    </div>
+  </section>
+  <!-- ============ DE PARTE DE OZZY ============ -->
+  <section class="seccion seccion-ozzy" id="ozzy">
+    <div class="contenedor ozzy-contenedor">
+      <p class="eyebrow">Un regalo especial</p>
+      <h2 class="titulo">De parte de Ozzy <span class="ozzy-pata" aria-hidden="true">🐾</span></h2>
+      <p class="ozzy-texto" id="ozzyTexto"></p>
+      <div class="carrusel carrusel-ozzy" id="ozzyFotos"></div>
+      <button class="btn btn-celeste" id="ozzyEstrella" type="button">Mandarle un mimo ✨</button>
+      <p class="ozzy-mimos" id="ozzyMimos" aria-live="polite"></p>
+    </div>
+  </section>
+  <!-- ============ CON NAHUEL ============ -->
+  <section class="seccion seccion-celeste" id="nahuel">
+    <div class="contenedor">
+      <p class="eyebrow">Un poquito de nosotros</p>
+      <h2 class="titulo">Vos y yo</h2>
+      <p class="bajada">Algunas de mis fotos favoritas con vos.</p>
+      <div class="carrusel" data-album="nahuel"></div>
+    </div>
+  </section>
+  <!-- ============ ASÍ SOS VOS ============ -->
+  <section class="seccion seccion-granate" id="vos" hidden>
+    <div class="contenedor">
+      <p class="eyebrow">Así sos vos</p>
+      <h2 class="titulo">Lo que te hace única</h2>
+      <p class="bajada">Por si alguna vez te olvidás de lo increíble que sos.</p>
+      <div class="cualidades" id="cualidades"></div>
+    </div>
+  </section>
+
+  <!-- ============ FAVORITOS ============ -->
+  <section class="seccion" id="favoritos">
+    <div class="contenedor">
+      <p class="eyebrow">Tus favoritos</p>
+      <h2 class="titulo">Las cosas que te gustan</h2>
+      <p class="bajada">Prestando atención desde siempre. Tocá cada tarjeta para darla vuelta.</p>
+      <div class="favoritos" id="favoritosGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ TRIVIA ============ -->
+  <section class="seccion seccion-celeste" id="trivia" hidden>
+    <div class="contenedor">
+      <p class="eyebrow">Datos curiosos</p>
+      <h2 class="titulo">Cosas que (casi) nadie sabe de vos</h2>
+      <p class="bajada">Tocá cada tarjeta para darla vuelta.</p>
+      <div class="trivia-grid" id="triviaGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section class="seccion seccion-granate" id="quiz">
+    <div class="contenedor">
+      <p class="eyebrow">Test</p>
+      <h2 class="titulo">¿Qué tan <span data-dato="nombre">Rosario</span> sos?</h2>
+      <p class="bajada">Un test sobre vos misma. A ver si te conocés tanto como yo.</p>
+      <div class="quiz-card" id="quizCard">
+        <div class="quiz-barra"><span id="quizBarra"></span></div>
+        <p class="quiz-contador" id="quizContador"></p>
+        <h3 class="quiz-pregunta" id="quizPregunta"></h3>
+        <div class="quiz-opciones" id="quizOpciones"></div>
+        <p class="quiz-comentario" id="quizComentario" hidden></p>
+        <button class="btn btn-granate" id="quizSiguiente" hidden>Siguiente</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ JUEGOS ============ -->
+  <section class="seccion" id="juegos">
+    <div class="contenedor">
+      <p class="eyebrow">A jugar</p>
+      <h2 class="titulo">Juegos</h2>
+      <div class="tabs" role="tablist">
+        <button class="tab activa" data-tab="memo" role="tab" aria-selected="true">Memotest</button>
+        <button class="tab" data-tab="atrapa" role="tab" aria-selected="false">Reventá los globos</button>
+        <button class="tab" data-tab="vales" role="tab" aria-selected="false">Vales de cumple</button>
+      </div>
+
+      <div class="panel" id="panel-memo">
+        <div class="juego-info"><span>Movimientos: <b id="memoMov">0</b></span><span>Pares: <b id="memoPares">0</b>/<b id="memoTotal">8</b></span><button class="btn btn-chico" id="memoReiniciar">Reiniciar</button></div>
+        <div class="memo-grid" id="memoGrid"></div>
+        <p class="juego-msg" id="memoMsg"></p>
+      </div>
+
+      <div class="panel" id="panel-atrapa" hidden>
+        <div class="juego-info"><span>Puntos: <b id="atrapaPuntos">0</b></span><span>Tiempo: <b id="atrapaTiempo">30</b>s</span><span>Récord: <b id="atrapaRecord">0</b></span></div>
+        <div class="atrapa-zona" id="atrapaZona">
+          <div class="atrapa-intro" id="atrapaIntro">
+            <p id="atrapaReglas">Reventá los globos antes de que se escapen.</p>
+            <button class="btn btn-granate" id="atrapaEmpezar">¡Jugar!</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" id="panel-vales" hidden>
+        <p class="bajada">Tu regalo extra: tocá cada vale para descubrirlo. Son canjeables cuando quieras.</p>
+        <div class="vales-grid" id="valesGrid"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ TORTA + BÚSQUEDA ============ -->
+  <section class="seccion seccion-celeste" id="torta">
+    <div class="contenedor torta-contenedor">
+      <p class="eyebrow">La sorpresa</p>
+      <h2 class="titulo">Soplá las velitas</h2>
+      <p class="bajada" id="tortaBajada">Pedí tres deseos y tocá cada vela para soplarla.</p>
+      <div class="torta" aria-label="Torta de cumpleaños">
+        <div class="velas" id="velas">
+          <button class="vela" aria-label="Soplar vela 1"><span class="llama"></span></button>
+          <button class="vela" aria-label="Soplar vela 2"><span class="llama"></span></button>
+          <button class="vela" aria-label="Soplar vela 3"><span class="llama"></span></button>
+        </div>
+        <div class="piso piso-arriba"><span class="glaseado"></span></div>
+        <div class="piso piso-abajo"></div>
+        <div class="plato"></div>
+      </div>
+
+      <article class="carta busqueda" id="carta" hidden>
+        <div class="carta-sobre">🗝️</div>
+        <h3 class="busq-titulo">Búsqueda del tesoro</h3>
+        <p class="busq-intro" id="busqIntro"></p>
+        <ol class="busq-pasos" id="busqPasos" aria-label="Regalos encontrados"></ol>
+        <div class="busq-pista" id="busqPista" aria-live="polite">
+          <span class="busq-num" id="busqNum"></span>
+          <p id="busqTexto"></p>
+          <button class="busq-ayuda-btn" id="busqAyudaBtn" type="button">💡 Pista</button>
+          <p class="busq-ayuda" id="busqAyuda" hidden></p>
+        </div>
+        <button class="btn btn-granate" id="busqBtn">¡Lo encontré! 🎁</button>
+        <p class="carta-firma" id="busqFin" hidden></p>
+      </article>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <p>Para <span data-dato="apodo">Pochi</span>, en su cumple · hecho con ❤ por <span data-dato="deParte">Nahuel</span></p>
+</footer>
+
+<div class="lightbox" id="lightbox" hidden>
+  <button class="lightbox-cerrar" id="lbCerrar" aria-label="Cerrar">✕</button>
+  <button class="lightbox-flecha izq" id="lbAnt" aria-label="Foto anterior">‹</button>
+  <figure class="lightbox-fig"><div id="lbMedia"></div><figcaption id="lbTexto"></figcaption></figure>
+  <button class="lightbox-flecha der" id="lbSig" aria-label="Foto siguiente">›</button>
+</div>
+
+<canvas class="confeti" id="confeti" aria-hidden="true"></canvas>
+
+<script src="datos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
