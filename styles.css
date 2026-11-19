@@ -147,8 +147,6 @@ button { font: inherit; cursor: pointer; }
 .hero-titulo .linea { display: block; }
 .hero-titulo .nombre { color: var(--granate); text-shadow: 3px 3px 0 var(--celeste); font-size: 1.3em; }
 .hero-titulo + .cuenta { margin-top: 28px; }
-.letra { display: inline-block; animation: rebote 2.4s ease-in-out infinite; animation-delay: calc(var(--i) * 80ms); }
-@keyframes rebote { 0%, 100% { transform: translateY(0); } 10% { transform: translateY(-14px) rotate(-4deg); } 20% { transform: translateY(0); } }
 .hero-sub { max-width: 56ch; margin: 18px auto 26px; font-size: 1.15rem; }
 
 .cuenta { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }

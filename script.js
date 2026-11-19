@@ -32,19 +32,8 @@
   document.querySelectorAll("[data-dato]").forEach((el) => { const v = D[el.dataset.dato]; if (v) el.textContent = v; });
   document.title = `Feliz Cumpleaños ${D.apodo}`;
 
-  /* Título con letras que rebotan */
-  function letras(el, texto) {
-    el.textContent = "";
-    texto.split(" ").forEach((pal, i, arr) => {
-      const s = crear("span", "letra");
-      s.style.setProperty("--i", i * 3);
-      s.textContent = pal;
-      el.appendChild(s);
-      if (i < arr.length - 1) el.appendChild(document.createTextNode(" "));
-    });
-  }
-  letras($("#tituloLinea1"), "¡Feliz Cumpleaños");
-  letras($("#tituloNombre"), `${D.apodo}!`);
+  /* Título (estático) */
+  $("#tituloNombre").textContent = `${D.apodo}!`;
 
   /* ---------- Loader ---------- */
 
