@@ -11,8 +11,8 @@
   --negro: #170609;
   --papel: #fffafb;
 
-  --f-display: "Dancing Script", "Brush Script MT", cursive;
-  --f-titulo: "Great Vibes", "Dancing Script", cursive;
+  --f-display: "Crimson Pro", Georgia, "Times New Roman", serif;
+  --f-titulo: "Crimson Pro", Georgia, "Times New Roman", serif;
   --f-texto: "Nunito", "Segoe UI", system-ui, sans-serif;
   --f-mano: "Caveat", "Comic Sans MS", cursive;
 
@@ -143,9 +143,9 @@ button { font: inherit; cursor: pointer; }
   background: var(--celeste); border: var(--borde); border-radius: 999px; padding: 4px 14px;
   transform: rotate(-2deg);
 }
-.hero-titulo { font-family: var(--f-titulo); font-weight: 400; font-size: clamp(3.2rem, 11vw, 7.2rem); line-height: 1.05; color: var(--negro); }
+.hero-titulo { font-family: var(--f-titulo); font-weight: 400; font-size: clamp(2.2rem, 10.5vw, 6.4rem); line-height: 1.05; color: var(--negro); }
 .hero-titulo .linea { display: block; }
-.hero-titulo .nombre { color: var(--granate); text-shadow: 3px 3px 0 var(--celeste); font-size: 1.3em; }
+.hero-titulo .nombre { color: var(--granate); text-shadow: 3px 3px 0 var(--celeste); font-size: 1.3em; font-weight: 600; }
 .hero-titulo + .cuenta { margin-top: 28px; }
 .hero-sub { max-width: 56ch; margin: 18px auto 26px; font-size: 1.15rem; }
 
