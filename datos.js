@@ -202,7 +202,7 @@ const DATOS = {
 
   // Vales de cumple: ella toca cada uno y se revela
   vales: [
-    "Vale por un día entero donde vos elegís todo",
+    "Vale por una salida donde vos quieras",
     "Vale por una comida en tu lugar favorito",
     "Vale por un masaje de 30 minutos",
     "Vale por un desayuno en la cama",
