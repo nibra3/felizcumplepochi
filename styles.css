@@ -590,17 +590,17 @@ button { font: inherit; cursor: pointer; }
   .nav-logo { padding-inline: 60px; }
 }
 
-/* ---------- Banner granate con detalles celeste ---------- */
-.nav { background: var(--granate); border-bottom: 3px solid var(--celeste); }
-.nav-logo { color: var(--celeste); }
-.nav-avatar { box-shadow: 0 0 0 3px var(--celeste); }
-.nav-links a { color: var(--celeste); }
-.nav-links a:hover { background: var(--granate-osc); border-color: var(--celeste); color: var(--celeste); }
-.nav-links .nav-cta { background: var(--celeste); color: var(--granate); border-color: var(--celeste); }
-.nav-links .nav-cta:hover { background: var(--celeste-claro); }
-.nav-toggle { background: var(--granate); color: var(--celeste); border-color: var(--celeste); }
+/* ---------- Banner celeste con detalles granate ---------- */
+.nav { background: var(--celeste); border-bottom: 3px solid var(--granate); }
+.nav-logo { color: var(--granate); }
+.nav-avatar { box-shadow: 0 0 0 3px var(--granate); }
+.nav-links a { color: var(--granate); }
+.nav-links a:hover { background: var(--celeste-claro); border-color: var(--granate); color: var(--granate); }
+.nav-links .nav-cta { background: var(--granate); color: var(--celeste); border-color: var(--granate); }
+.nav-links .nav-cta:hover { background: var(--granate-claro); }
+.nav-toggle { background: var(--celeste); color: var(--granate); border-color: var(--granate); }
 @media (max-width: 760px) {
-  .nav-links { background: var(--granate); border-bottom: 3px solid var(--celeste); }
+  .nav-links { background: var(--celeste); border-bottom: 3px solid var(--granate); }
 }
 
 /* Inicio sin cuenta regresiva: botones en fila */
