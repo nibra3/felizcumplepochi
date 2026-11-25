@@ -54,20 +54,7 @@
   }
   let festejado = false;
   function tic() {
-    const obj = proximoCumple();
-    if (!obj) {
-      ["#cDias", "#cHoras", "#cMin", "#cSeg"].forEach((s) => ($(s).textContent = "🎉"));
-      if (!festejado) { festejado = true; setTimeout(() => confeti(), 1500); }
-      return;
-    }
-    let ms = obj - new Date();
-    const d = Math.floor(ms / 864e5); ms -= d * 864e5;
-    const h = Math.floor(ms / 36e5); ms -= h * 36e5;
-    const m = Math.floor(ms / 6e4); ms -= m * 6e4;
-    $("#cDias").textContent = d;
-    $("#cHoras").textContent = String(h).padStart(2, "0");
-    $("#cMin").textContent = String(m).padStart(2, "0");
-    $("#cSeg").textContent = String(Math.floor(ms / 1000)).padStart(2, "0");
+    if (!proximoCumple() && !festejado) { festejado = true; setTimeout(() => confeti(), 1500); }
   }
 
   /* ---------- En números (días, horas, latidos) ---------- */

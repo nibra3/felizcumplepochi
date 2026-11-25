@@ -54,8 +54,6 @@ const DATOS = {
      sacar fotos (borrando la línea) o sumar más (copiando una línea). */
   albumes: {
     bebe: [
-      { src: "fotos/bebe-01.jpg", texto: "Mirá esos cachetes" },
-      { src: "fotos/bebe-02.jpg", texto: "Reina de la cuna" },
       { src: "fotos/bebe-03.jpg", texto: "Con la abuela pirucha" },
       { src: "fotos/bebe-16.jpg", texto: "Soplando la velita con mamá y papá", pos: "left center" },
       { src: "fotos/familia-07.jpg", texto: "Padre e hija" },
@@ -125,6 +123,7 @@ const DATOS = {
       { src: "fotos/bichos-03.jpg", texto: "Los chusmas del barrio" },
       { src: "fotos/bichos-04.jpg", texto: "Pachorra" },
       { src: "fotos/bichos-05.jpg", texto: "Cuanto amorrr" },
+      { src: "fotos/bichos-13.jpg", texto: "Payasitos", pos: "center 40%" },
       { src: "fotos/bichos-06.jpg", texto: "La felcidad es total" },
     ],
     nahuel: [
@@ -203,7 +202,7 @@ const DATOS = {
   // Vales de cumple: ella toca cada uno y se revela
   vales: [
     "Vale por una salida donde vos quieras",
-    "Vale por una comida en tu lugar favorito",
+    "Vale por unas pastas",
     "Vale por un masaje de 30 minutos",
     "Vale por un desayuno en la cama",
     "Vale por ganar una discusión (una sola)",

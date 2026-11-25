@@ -589,3 +589,23 @@ button { font: inherit; cursor: pointer; }
   .nav-avatar { top: 50%; transform: translateY(-50%); }
   .nav-logo { padding-inline: 60px; }
 }
+
+/* ---------- Banner granate con detalles celeste ---------- */
+.nav { background: var(--granate); border-bottom: 3px solid var(--celeste); }
+.nav-logo { color: var(--celeste); }
+.nav-avatar { box-shadow: 0 0 0 3px var(--celeste); }
+.nav-links a { color: var(--celeste); }
+.nav-links a:hover { background: var(--granate-osc); border-color: var(--celeste); color: var(--celeste); }
+.nav-links .nav-cta { background: var(--celeste); color: var(--granate); border-color: var(--celeste); }
+.nav-links .nav-cta:hover { background: var(--celeste-claro); }
+.nav-toggle { background: var(--granate); color: var(--celeste); border-color: var(--celeste); }
+@media (max-width: 760px) {
+  .nav-links { background: var(--granate); border-bottom: 3px solid var(--celeste); }
+}
+
+/* Inicio sin cuenta regresiva: botones en fila */
+.hero-titulo + .hero-botones { margin-top: 32px; }
+.hero-botones { flex-wrap: nowrap; gap: 10px; }
+@media (max-width: 480px) {
+  .hero-botones .btn { padding-inline: 14px; font-size: .95rem; white-space: nowrap; }
+}
