@@ -229,7 +229,7 @@ const DATOS = {
     // clave = contraseña del candado; abierto = lo que aparece al abrirlo
     pistas: [
       { texto: "Hay un rincón de la casa donde siempre es invierno. Andá a visitarlo antes de que lo tuyo se derrita.", ayuda: "Abrí la puerta de arriba de la heladera." },
-      { texto: "Este regalo está bajo llave. Si sabés la contraseña, es tuyo.", clave: "42818582", abierto: "🔓 ¡Abierto! Tus zapatillas nuevas te están esperando." },
+      { texto: "Entre tu ropa, abajo de todo, hay una bolsa roja que se llama igual que el asesino de una serie. Lo que guarda te va a llevar a todos lados.", ayuda: "Placard, estante de abajo, la bolsa de Dexter." },
       { texto: "Volvé al frío, pero bajá. Abajo de todo, entre hojas verdes y cosas sanas, me escondí yo, que de sano no tengo nada.", ayuda: "Abrí el cajón de las verduras." },
     ],
     final: "¡Encontraste todo! Feliz cumpleaños, Pochi. Te amo.",
