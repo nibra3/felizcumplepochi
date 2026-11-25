@@ -609,3 +609,9 @@ button { font: inherit; cursor: pointer; }
 @media (max-width: 480px) {
   .hero-botones .btn { padding-inline: 14px; font-size: .95rem; white-space: nowrap; }
 }
+
+/* Sorpresa bloqueada */
+.candado { text-align: center; margin-top: 10px; }
+.candado-icono { font-size: 3.4rem; animation: latido 2.4s infinite; }
+.candado .cuenta { margin-top: 18px; }
+#sorpresaContenido[hidden], .candado[hidden] { display: none !important; }

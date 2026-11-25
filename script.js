@@ -77,6 +77,24 @@
 
   tic(); setInterval(tic, 1000);
 
+  /* ---------- Sorpresa bloqueada hasta el 25/11 a las 17 hs (Argentina) ---------- */
+  const apertura = new Date("2026-11-25T17:00:00-03:00");
+  const candado = $("#sorpresaCandado"), contenido = $("#sorpresaContenido");
+  function candadoTic() {
+    let ms = apertura - new Date();
+    if (ms <= 0) {
+      candado.hidden = true; contenido.hidden = false;
+      clearInterval(candadoInt); return;
+    }
+    candado.hidden = false; contenido.hidden = true;
+    const h = Math.floor(ms / 36e5); ms -= h * 36e5;
+    const m = Math.floor(ms / 6e4); ms -= m * 6e4;
+    $("#sHoras").textContent = String(h).padStart(2, "0");
+    $("#sMin").textContent = String(m).padStart(2, "0");
+    $("#sSeg").textContent = String(Math.floor(ms / 1000)).padStart(2, "0");
+  }
+  const candadoInt = setInterval(candadoTic, 1000); candadoTic();
+
   /* ---------- Cualidades ---------- */
   const cq = $("#cualidades");
   D.cualidades.forEach((c, i) => {
