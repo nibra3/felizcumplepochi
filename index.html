@@ -260,6 +260,12 @@
           <button class="busq-ayuda-btn" id="busqAyudaBtn" type="button">💡 Pista</button>
           <p class="busq-ayuda" id="busqAyuda" hidden></p>
         </div>
+        <form class="busq-clave" id="busqClave" hidden autocomplete="off">
+          <input id="busqInput" type="password" inputmode="numeric" placeholder="Contraseña" aria-label="Contraseña">
+          <button class="btn btn-granate" type="submit">Abrir 🔒</button>
+          <p class="busq-error" id="busqError" hidden>Esa no es. Probá de nuevo.</p>
+        </form>
+        <p class="busq-abierto" id="busqAbierto" hidden></p>
         <button class="btn btn-granate" id="busqBtn">¡Lo encontré! 🎁</button>
         <p class="carta-firma" id="busqFin" hidden></p>
       </article>

@@ -419,7 +419,7 @@
     const mostrar = () => {
       [...pasos.children].forEach((li, k) => { li.classList.toggle("hecho", k < i); li.classList.toggle("actual", k === i); });
       if (i >= n) {
-        caja.hidden = true; btn.hidden = true;
+        caja.hidden = true; btn.hidden = true; $("#busqClave").hidden = true;
         fin.textContent = B.final; fin.hidden = false;
         confeti();
         return;
@@ -431,7 +431,19 @@
       ay.textContent = pz.ayuda || ""; ay.hidden = true;
       ab.hidden = !pz.ayuda;
       ab.onclick = () => { ay.hidden = false; ab.hidden = true; };
-      btn.textContent = i === n - 1 ? "¡Encontré el último! 🎉" : "¡Lo encontré! 🎁";
+      const form = $("#busqClave"), inp = $("#busqInput"), err = $("#busqError"), abierto = $("#busqAbierto");
+      abierto.hidden = true; err.hidden = true; inp.value = "";
+      form.hidden = !pz.clave; btn.hidden = !!pz.clave;
+      form.onsubmit = (e) => {
+        e.preventDefault();
+        if (inp.value.replace(/\D/g, "") === pz.clave) {
+          form.hidden = true; abierto.textContent = pz.abierto || "🔓 ¡Abierto!"; abierto.hidden = false;
+          btn.hidden = false; confeti();
+        } else {
+          err.hidden = false; form.classList.remove("mal"); void form.offsetWidth; form.classList.add("mal");
+        }
+      };
+      btn.textContent = i === n - 1 ? "¡Encontré el último! 🎉" : (pz.clave ? "Siguiente sorpresa 🎁" : "¡Lo encontré! 🎁");
       caja.classList.remove("entra"); void caja.offsetWidth; caja.classList.add("entra");
     };
     btn.onclick = () => { i++; mostrar(); };

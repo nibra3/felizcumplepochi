@@ -615,3 +615,12 @@ button { font: inherit; cursor: pointer; }
 .candado-icono { font-size: 3.4rem; animation: latido 2.4s infinite; }
 .candado .cuenta { margin-top: 18px; }
 #sorpresaContenido[hidden], .candado[hidden] { display: none !important; }
+
+/* Candado con contraseña */
+.busq-clave { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; margin: 0 0 18px; }
+.busq-clave input { font: 800 1.2rem var(--f-texto); letter-spacing: .2em; text-align: center; width: 12ch; padding: 10px 14px; border: var(--borde); border-radius: 999px; background: var(--blanco); }
+.busq-clave.mal { animation: sacude .4s; }
+.busq-error { flex-basis: 100%; margin: 0; color: var(--granate); font-weight: 800; }
+.busq-abierto { font-family: var(--f-mano); font-size: 1.8rem; color: var(--granate); margin: 0 0 14px; animation: busqEntra .4s ease; }
+@keyframes sacude { 25% { transform: translateX(-8px); } 50% { transform: translateX(8px); } 75% { transform: translateX(-4px); } }
+.busq-clave[hidden], .busq-abierto[hidden], .busq-error[hidden] { display: none; }

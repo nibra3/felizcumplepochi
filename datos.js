@@ -224,14 +224,13 @@ const DATOS = {
      Una pista por regalo, en orden. Cuando encuentra uno, toca
      "¡Lo encontré!" y aparece el acertijo siguiente.          */
   busqueda: {
-    intro: "Tu regalo no está acá: está escondido en el depto. Son 5 regalos y cada acertijo te lleva al siguiente.",
+    intro: "Tu regalo no está acá: son 3 sorpresas escondidas. Resolvé cada una para pasar a la siguiente.",
     // texto = el acertijo; ayuda = lo que aparece al tocar "💡 Pista"
+    // clave = contraseña del candado; abierto = lo que aparece al abrirlo
     pistas: [
-      { texto: "Cuando el frío aprieta me usás sin dudar. Soy inflada y vivo en el placard.", ayuda: "Soy color mostaza. Revisá bien mis bolsillos, que algo te quiero dar." },
-      { texto: "Todas las noches te espero en la cama, escucho tus sueños y te abrazo hasta la mañana.", ayuda: "Meté la mano bien adentro de mi funda." },
-      { texto: "No busques lejos: me tenés en la mano ahora mismo y me mirás más que a nadie.", ayuda: "Sacame la funda y fijate bien." },
-      { texto: "Acá te tirás a ver tus series y a resolver misterios.", ayuda: "Levantá el almohadón." },
-      { texto: "EDITAR: acertijo del regalo 5", ayuda: "EDITAR: pista del regalo 5" },
+      { texto: "Hay un rincón de la casa donde siempre es invierno. Andá a visitarlo antes de que lo tuyo se derrita.", ayuda: "Abrí la puerta de arriba de la heladera." },
+      { texto: "Este regalo está bajo llave. Si sabés la contraseña, es tuyo.", clave: "42818582", abierto: "🔓 ¡Abierto! Tus zapatillas nuevas te están esperando." },
+      { texto: "Me partís en cuadraditos, me escondés para que nadie me encuentre y nunca alcanzo. Buscame, que esta vez vengo de a varios.", ayuda: "Soy dulce y marrón, y sos mi fan número uno." },
     ],
     final: "¡Encontraste todo! Feliz cumpleaños, Pochi. Te amo.",
   },
