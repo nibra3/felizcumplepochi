@@ -230,7 +230,7 @@ const DATOS = {
     pistas: [
       { texto: "Hay un rincón de la casa donde siempre es invierno. Andá a visitarlo antes de que lo tuyo se derrita.", ayuda: "Abrí la puerta de arriba de la heladera." },
       { texto: "Este regalo está bajo llave. Si sabés la contraseña, es tuyo.", clave: "42818582", abierto: "🔓 ¡Abierto! Tus zapatillas nuevas te están esperando." },
-      { texto: "Me partís en cuadraditos, me escondés para que nadie me encuentre y nunca alcanzo. Buscame, que esta vez vengo de a varios.", ayuda: "Soy dulce y marrón, y sos mi fan número uno." },
+      { texto: "Volvé al frío, pero bajá. Abajo de todo, entre hojas verdes y cosas sanas, me escondí yo, que de sano no tengo nada.", ayuda: "Abrí el cajón de las verduras." },
     ],
     final: "¡Encontraste todo! Feliz cumpleaños, Pochi. Te amo.",
   },
