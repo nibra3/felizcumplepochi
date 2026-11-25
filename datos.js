@@ -229,8 +229,8 @@ const DATOS = {
     // clave = contraseña del candado; abierto = lo que aparece al abrirlo
     pistas: [
       { texto: "Hay un rincón de la casa donde siempre es invierno. Andá a visitarlo antes de que lo tuyo se derrita.", ayuda: "Abrí la puerta de arriba de la heladera." },
-      { texto: "Vivo en la pieza, tengo puertas pero no soy casa, y cada mañana me abrís para decidir quién vas a ser hoy.", ayuda: "Mirá en el estante de abajo, adentro de la bolsa roja." },
       { texto: "Volvé al frío, pero bajá. Abajo de todo, entre hojas verdes y cosas sanas, me escondí yo, que de sano no tengo nada.", ayuda: "Abrí el cajón de las verduras." },
+      { texto: "Vivo en la pieza, tengo puertas pero no soy casa, y cada mañana me abrís para decidir quién vas a ser hoy.", ayuda: "Mirá en el estante de abajo, adentro de la bolsa roja." },
     ],
     final: "¡Encontraste todo! Feliz cumpleaños, Pochi. Te amo.",
   },
